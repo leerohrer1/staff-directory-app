@@ -1,0 +1,52 @@
+* {
+  font-family: Optima, Candara, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(25, 110, 194);
+  font-family: Optima, Candara, sans-serif;
+  font-size: 300%;
+}
+
+h2,
+h3 {
+  color: rgb(21, 97, 173) 444;
+  font-family: Optima, Candara, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2em;
+}
+
+body,
+input[type="text"],
+button {
+  color: rgb(44, 52, 60) 444;
+  font-family: Candara, Calibri, serif;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}

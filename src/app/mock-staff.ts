@@ -1,6 +1,6 @@
 import Staff from './staff';
 
-export const STAFF: Staff[] = [
+const STAFF: Staff[] = [
   { id: 12, name: 'Dr. Evil' },
   { id: 13, name: 'Sheryl Crow' },
   { id: 14, name: 'Mariah Carey' },
@@ -11,3 +11,5 @@ export const STAFF: Staff[] = [
   { id: 19, name: 'Dr. McStuffins' },
   { id: 20, name: 'Kahlil Gibran' }
 ];
+
+export default STAFF;

@@ -8,12 +8,4 @@
   </li>
 </ul>
 
-<section *ngIf="selectedStaff">
-  <h2>{{selectedStaff.name}} Details</h2>
-  <section>id: {{selectedStaff.id}}</section>
-  <section>
-    <label for="hero-name">Staff member's name: </label>
-    <input id="hero-name" [(ngModel)]="selectedStaff.name" placeholder="name">
-  </section>
-</section>
-
+<app-staff-detail [staff]="selectedStaff"></app-staff-detail>

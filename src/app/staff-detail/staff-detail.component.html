@@ -1,0 +1,9 @@
+
+<section *ngIf="staff">
+  <h2>{{staff.name}} Details</h2>
+  <section>id: {{staff.id}}</section>
+  <section>
+    <label for="staff-name">Staff member's name: </label>
+    <input id="staff-name" [(ngModel)]="staff.name" placeholder="name">
+  </section>
+</section>

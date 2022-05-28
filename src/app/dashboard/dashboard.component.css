@@ -1,3 +1,7 @@
+* {
+  font-family: Optima, Candara, sans-serif;
+}
+
 h1 {
   color: rgb(25, 110, 194);
   font-family: Optima, Candara, sans-serif;
@@ -9,6 +13,7 @@ h2 {
   font-family: Optima, Candara, sans-serif;
   font-size: 200%;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -18,16 +23,21 @@ h3 {
   font-weight: 700;
 }
 
-.clear {
-  margin-left: 2.75em;
+.eom-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
-.msg-txt {
-  margin-left: 2.75em;
-  margin-top: 1em;
-}
-
-button {
+a {
   font-size: 1rem;
   text-align: center;
   background-color: rgb(38, 85, 133);
@@ -38,11 +48,18 @@ button {
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
   margin-bottom: 0.5em;
-  padding-bottom: 0.1em;
+  padding-top: 1rem;
+  min-width: 70px;
+  margin: 0.75em auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
 
-button:hover {
-  color: white;
+a:hover {
   background-color: rgb(21, 47, 72);
   box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
 }

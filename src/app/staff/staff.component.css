@@ -16,6 +16,13 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  color: rgb(16, 75, 135);
+  font-family: Optima, Candara, sans-serif;
+  font-size: 175%;
+  font-weight: 700;
+}
+
 button {
   text-align: left;
   background: linear-gradient(to right, rgb(38, 85, 133) 23%, white 23%);
@@ -25,7 +32,7 @@ button {
   border-radius: 5px;
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   padding-bottom: 0.8em;
 }
 

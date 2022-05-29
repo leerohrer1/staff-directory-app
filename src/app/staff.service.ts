@@ -12,9 +12,15 @@ export class StaffService {
 
   constructor(private messageService: MessageService) { }
 
-  getStaff(): Observable<Staff[]> {
+  getStaffMembers(): Observable<Staff[]> {
     const staffMembers = of(STAFF);
-    this.messageService.add('StaffService: fetched staff members');
+    this.messageService.add('Staff Service: fetched all staff');
     return staffMembers;
+  }
+
+  getStaff(id: number): Observable<Staff> {
+    const staff = STAFF.find(s => s.id === id)!;
+    this.messageService.add('StaffService: fetched staff member id: ${id}');
+    return of(staff);
   }
 }

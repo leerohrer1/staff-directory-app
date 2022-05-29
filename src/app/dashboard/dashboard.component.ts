@@ -13,11 +13,11 @@ export class DashboardComponent implements OnInit {
   constructor(private staffService: StaffService) { }
 
   ngOnInit(): void {
-    this.getStaff();
+    this.getStaffMembers();
   }
 
-  getStaff(): void {
-    this.staffService.getStaff()
+  getStaffMembers(): void {
+    this.staffService.getStaffMembers()
       .subscribe(staffMembers => this.staffMembers = staffMembers.slice(1, 5));
   }
 }

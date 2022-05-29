@@ -1,11 +1,8 @@
 <h2>Our staff</h2>
-<ul class="staff">
-  <li *ngFor="let staff of staffMembers">
-    <button [class.selected]="staff === selectedStaff" type="button" (click)="onSelect(staff)">
-      <span class="badge">{{staff.id}}</span>
-      <span class="name">{{staff.name}}</span>
-    </button>
+<ul class="staffMembers">
+  <li class="staff" *ngFor="let staff of staffMembers">
+    <a routerLink="/detail/{{staff.id}}">
+      <span class="badge">{{staff.id}}</span> {{staff.name}}
+      </a>
   </li>
 </ul>
-
-<app-staff-detail [staff]="selectedStaff"></app-staff-detail>

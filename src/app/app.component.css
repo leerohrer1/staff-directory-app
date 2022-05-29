@@ -9,8 +9,17 @@
   top: 0;
   position: fixed;
   background-color: rgb(158, 202, 246);
-  opacity: 90%; 
-  z-index: 10;
+  z-index: 2;
+ }
+
+ .middle {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
  }
 
 h1 {
@@ -46,7 +55,7 @@ button {
 }
 
 .home {
-  margin-left: 2.75em;
+  margin-right: .75em;
 }
 
 .staff-members {

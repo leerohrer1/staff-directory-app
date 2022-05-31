@@ -1,9 +1,10 @@
 <section *ngIf="staff">
   <h3>{{staff.name}} Details</h3>
-  <section><span>id: </span>{{staff.id}}</section>
+  <section><span>Staff member's id: </span>{{staff.id}}</section>
   <section>
     <label for="staff-name">Staff member's name: </label>
     <input id="staff-name" [(ngModel)]="staff.name" placeholder="name">
   </section>
-  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">Save</button>
+  <button type="button" (click)="goBack()">Go back</button>
 </section>

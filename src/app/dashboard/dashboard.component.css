@@ -27,7 +27,6 @@ h3 {
   padding: 0;
   margin: auto;
   max-width: 1000px;
-
   /* flexbox */
   display: flex;
   flex-direction: row;
@@ -37,7 +36,7 @@ h3 {
   align-items: flex-start;
 }
 
-a {
+button {
   font-size: 1rem;
   text-align: center;
   background-color: rgb(38, 85, 133);
@@ -48,18 +47,11 @@ a {
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
   margin-bottom: 0.5em;
-  padding-top: 1rem;
-  min-width: 70px;
-  margin: 0.75em auto;
-  box-sizing: border-box;
-
-  /* flexbox */
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
+  padding-bottom: 0.1em;
 }
 
-a:hover {
+button:hover {
+  color: white;
   background-color: rgb(21, 47, 72);
   box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
 }

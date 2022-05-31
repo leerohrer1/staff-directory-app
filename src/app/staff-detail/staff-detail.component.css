@@ -1,3 +1,7 @@
+* {
+  font-family: Optima, Candara, sans-serif;
+  box-sizing: border-box;
+}
 
 h1 {
   color: rgb(25, 110, 194);
@@ -17,4 +21,36 @@ h3 {
   font-family: Optima, Candara, sans-serif;
   font-size: 175%;
   font-weight: 700;
+}
+
+label {
+  color: black;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+
+button {
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgb(38, 85, 133);
+  color: rgb(255, 255, 255);
+  width: 80px;
+  height: 50px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  margin-top: 15px;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  padding-bottom: 0.1em;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(21, 47, 72);
+  box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
 }

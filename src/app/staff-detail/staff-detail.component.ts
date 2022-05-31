@@ -16,7 +16,9 @@ export class StaffDetailComponent implements OnInit {
     private location: Location
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getStaff();
+  }
 
   @Input() staff?: Staff;
 
@@ -27,5 +29,12 @@ export class StaffDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    if (this.staff) {
+      this.staffService.updateStaff(this.staff)
+        .subscribe(() => this.goBack());
+    }
   }
 }

@@ -1,10 +1,11 @@
-<section class="top">
+<section class="nav-bar">
   <h1>{{ title }}</h1>
-</section>
-<nav class="middle">
-  <a class="home" routerLink="/dashboard">Dashboard</a>
-  <a class="staff-members" routerLink="/staffMembers">Staff Members</a>
+  <nav>
+  <a class="dashboard" routerLink="/dashboard">Dashboard</a>
+  <a class="members" routerLink="/staffMembers">Staff Members</a>
 </nav>
+</section>
 
+<app-staff-search></app-staff-search>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

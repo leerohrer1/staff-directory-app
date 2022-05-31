@@ -23,69 +23,104 @@ h3 {
   font-weight: 700;
 }
 
-ul {
+.staff {
+  margin: 0 0 2em 0;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  width: 15em;
 }
 
-.staff {
-  text-align: left;
-  background: linear-gradient(to right, rgb(38, 85, 133) 23%, white 23%);
-  
+input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.staff li {
+  position: relative;
+  cursor: pointer;
+}
+
+.staff li:hover {
+  left: .1em;
+}
+
+.staff a {
+  color: black;
+  text-decoration: none;
+  height: 50px;
+  border-radius: 5px;
+  border: thin solid rgb(21, 47, 72);;
+  margin: .5em;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  box-shadow: 1px 1px 1px grey;
+
+}
+
+.staff a:hover {
+  color: white;
+  background-color:  rgb(21, 47, 72);
+  box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
+}
+
+
+.staff .badge {
+  border-radius: 5px;
+  border: thin solid #888;
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 1.3em 1em;
+  background-color: rgb(38, 85, 133);
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  width: 40px;
+  height: 50px;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+}
+
+.add-button {
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgb(38, 85, 133);
+  color: rgb(255, 255, 255);
   width: 190px;
   height: 50px;
   border-radius: 5px;
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
-  margin-bottom: 1em;
-  padding-bottom: 0.8em;
-  padding-left: .2em;
-  padding-top: .5em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.1em;
 }
 
-.staff:hover {
+.add-button:hover {
   color: white;
-  background-color: rgb(187, 217, 247);
+  background-color: rgb(21, 47, 72);
   box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
-  background: linear-gradient(
-    to right,
-    rgb(38, 85, 133) 23%,
-    rgb(21, 47, 72) 23%
-  );
 }
 
-a:link {
-  color: #444;
-  text-decoration: none;
+button.delete {
+  background-color: white;
+  color:  black;
+  font-size: 1rem;
+  margin: 9px;
+  padding: 1px 10px 3px 10px;
+  border-radius: 3px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  width: 240px;
 }
 
-a:visited { 
-  color: #444;
-  text-decoration: none; 
-}
-
-
-a:hover { 
-  text-decoration: none; 
+button.delete:hover {
   color: white;
+  background-color: rgb(133, 38, 38);
+  box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
 }
-
-a:active { 
-  text-decoration: none; 
-  color: white;
-}
-
-
-.badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: rgb(38, 85, 133);
-  line-height: 1em;
-  margin-right: 0.8em;
-  border-radius: 4px 0 0 4px;
-}
-
-

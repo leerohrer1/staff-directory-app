@@ -21,4 +21,18 @@ export class StaffComponent implements OnInit {
     this.staffService.getStaffMembers()
         .subscribe(staffMembers => this.staffMembers = staffMembers);
   }
+
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.staffService.addStaff({ name } as Staff)
+      .subscribe((staff: Staff) => {
+        this.staffMembers.push(staff);
+      });
+  }
+
+  delete(staff: Staff): void {
+    this.staffMembers = this.staffMembers.filter(s => s !== staff);
+    this.staffService.deleteStaff(staff.id).subscribe();
+  }
 }

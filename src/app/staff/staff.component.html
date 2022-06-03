@@ -1,20 +1,22 @@
-<h2>Our staff</h2>
+<!DOCTYPE html>
+<html>
+  <h2>Our staff</h2>
+    <section>
+      <label for="new-staff">Enter the name of the staff member you are adding:</label>
+      <input id="new-staff" #staffName />
 
-<section>
-  <label for="new-staff">Enter the name of the staff member you area adding:</label>
-  <input id="new-staff" #staffName />
+      <button type="button" class="add-button" (click)="add(staffName.value); staffName.value=''">
+        Add staff member
+      </button>
+    </section>
 
-  <button type="button" class="add-button" (click)="add(staffName.value); staffName.value=''">
-    Add staff member
-  </button>
-</section>
-
-<ul class="staffMembers">
-  <li class="staff" *ngFor="let staff of staffMembers">
-    <a routerLink="/detail/{{staff.id}}">
-      <span class="badge">{{staff.id}}</span> {{staff.name}}
-      </a>
-      <button type="button" class="delete" title="delete staff"
-  (click)="delete(staff)">Delete this staff member</button>
-  </li>
-</ul>
+    <ul class="staffMembers">
+      <li class="staff" *ngFor="let staff of staffMembers">
+        <a routerLink="/detail/{{staff.id}}">
+          <span class="badge">{{staff.id}}</span> {{staff.name}}
+          </a>
+          <button type="button" class="delete" title="delete staff"
+      (click)="delete(staff)">Delete this staff member</button>
+      </li>
+    </ul>
+</html>

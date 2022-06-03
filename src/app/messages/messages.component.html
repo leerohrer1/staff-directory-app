@@ -1,9 +1,9 @@
-<section *ngIf="messageService.messages.length">
-
-  <h2>History</h2>
- 
-  <section class="msg-txt" *ngFor='let message of messageService.messages'> {{message}} </section>
-
-  <button type="button" class="clear"
-  (click)="messageService.clear()">Clear history</button>
-</section>
+<!DOCTYPE html>
+<html>
+  <section *ngIf="messageService.messages.length">
+    <h2>History</h2>
+      <section class="msg-txt" *ngFor='let message of messageService.messages'> {{message}} </section>
+      <button type="button" class="clear"
+    (click)="messageService.clear()">Clear history</button>
+  </section>
+</html>

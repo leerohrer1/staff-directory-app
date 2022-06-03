@@ -3,22 +3,14 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: rgb(25, 110, 194);
-  font-family: Optima, Candara, sans-serif;
-  font-size: 300%;
-}
-
 h2 {
   color: rgb(21, 97, 173);
-  font-family: Optima, Candara, sans-serif;
   font-size: 200%;
   font-weight: 700;
 }
 
 h3 {
   color: rgb(16, 75, 135);
-  font-family: Optima, Candara, sans-serif;
   font-size: 175%;
   font-weight: 700;
 }
@@ -33,7 +25,7 @@ h3 {
 input {
   display: block;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem 0;
   box-sizing: border-box;
 }
@@ -44,7 +36,7 @@ input {
 }
 
 .staff li:hover {
-  left: .1em;
+  left: 0.1em;
 }
 
 .staff a {
@@ -52,21 +44,19 @@ input {
   text-decoration: none;
   height: 50px;
   border-radius: 5px;
-  border: thin solid rgb(21, 47, 72);;
-  margin: .5em;
+  border: thin solid rgb(21, 47, 72);
+  margin: 0.5em;
   border-radius: 4px;
   display: block;
   width: 100%;
   box-shadow: 1px 1px 1px grey;
-
 }
 
 .staff a:hover {
   color: white;
-  background-color:  rgb(21, 47, 72);
+  background-color: rgb(21, 47, 72);
   box-shadow: 1px 1px 1px 2px rgb(198, 204, 209);
 }
-
 
 .staff .badge {
   border-radius: 5px;
@@ -84,7 +74,7 @@ input {
   height: 50px;
   min-width: 16px;
   text-align: right;
-  margin-right: .8em;
+  margin-right: 0.8em;
 }
 
 .add-button {
@@ -109,7 +99,7 @@ input {
 
 button.delete {
   background-color: white;
-  color:  black;
+  color: black;
   font-size: 1rem;
   margin: 9px;
   padding: 1px 10px 3px 10px;

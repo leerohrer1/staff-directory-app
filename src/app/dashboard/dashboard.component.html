@@ -1,6 +1,9 @@
-<h2>Employees of the Month</h2>
-<section class="eom-menu">
-  <a *ngFor="let staff of staffMembers" routerLink="/detail/{{staff.id}}">
-    <button>{{staff.name}}</button>
-  </a>
-</section>
+<!DOCTYPE html>
+<html>
+  <h2>Employees of the Month</h2>
+  <section class="eom-menu">
+    <a *ngFor="let staff of staffMembers" routerLink="/detail/{{staff.id}}">
+      <button>{{staff.name}}</button>
+    </a>
+  </section>
+</html>

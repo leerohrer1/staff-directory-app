@@ -3,22 +3,8 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: rgb(25, 110, 194);
-  font-family: Optima, Candara, sans-serif;
-  font-size: 300%;
-}
-
-h2 {
-  color: rgb(21, 97, 173);
-  font-family: Optima, Candara, sans-serif;
-  font-size: 200%;
-  font-weight: 700;
-}
-
 h3 {
   color: rgb(16, 75, 135);
-  font-family: Optima, Candara, sans-serif;
   font-size: 175%;
   font-weight: 700;
 }
@@ -30,7 +16,7 @@ label {
 
 input {
   font-size: 1em;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 button {
